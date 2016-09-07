@@ -41,6 +41,8 @@ $.fn.S3Uploader = (options) ->
       true
 
   setUploadForm = ->
+    
+    console.log(settings.dropZone);
     $uploadForm.find("input[type='file']").fileupload
 
       dropZone: settings.dropZone
